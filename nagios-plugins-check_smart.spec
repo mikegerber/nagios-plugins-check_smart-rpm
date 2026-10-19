@@ -7,7 +7,7 @@
 Name:    nagios-plugins-check_smart
 
 # renovate: datasource=github-releases depName=Napsty/check_smart versioning=loose
-Version: 6.14.1
+Version: 6.18.3
 Release: 2.ndias%{?dist}
 
 Summary: Plugin to monitor the health and values of SMART
