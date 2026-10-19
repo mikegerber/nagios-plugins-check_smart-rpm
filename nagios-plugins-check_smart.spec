@@ -5,15 +5,18 @@
 
 
 Name:    nagios-plugins-check_smart
+
+# renovate: datasource=github-releases depName=Napsty/check_smart versioning=loose
 Version: 6.14.1
 Release: 2.ndias%{?dist}
-Summary: Plugin to monitor the health and values of SMART
 
+Summary: Plugin to monitor the health and values of SMART
 License: GPLv3
+
 URL:     https://www.claudiokuenzler.com/monitoring-plugins/check_smart.php
 Source0: https://github.com/Napsty/check_smart/archive/refs/tags/%{version}.tar.gz#/check_smart-%{version}.tar.gz
-BuildArch: noarch
 
+BuildArch: noarch
 Requires: smartmontools
 
 %description
