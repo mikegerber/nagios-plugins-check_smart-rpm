@@ -8,7 +8,7 @@ Name:    nagios-plugins-check_smart
 
 # renovate: datasource=github-releases depName=Napsty/check_smart versioning=loose
 Version: 6.18.3
-Release: 2.ndias%{?dist}
+Release: 1mike%{?dist}
 
 Summary: Plugin to monitor the health and values of SMART
 License: GPLv3
@@ -39,12 +39,15 @@ install -p -m 755 -D check_smart.pl %{buildroot}%{_libdir}/nagios/plugins/check_
 
 
 %files
-%doc README.md SSD-TBW-Warranty.md 
+%doc README.md SSD-TBW-Warranty.md
 %license COPYING.md
 
 %{_libdir}/nagios/plugins/check_smart.pl
 
 %changelog
+* Mon Oct 19 2026 Mike Gerber <mike@mike-gerber.de> - 6.18.3-1mike
+- Update to 6.18.3
+
 * Tue Oct 3 2023 Nuno Dias <Nuno.Dias@gmail.com> - 6.14.1-2.ndias
 - Update requires
 
